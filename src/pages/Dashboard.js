@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import UserView from '../components/UserView';
+import RoleAdd from '../components/RoleAdd';
+import RoleView from '../components/RoleView';
+import AddUser from '../components/AddUser';
 
 const Dashboard = () => {
     const [activeComponent, setActiveComponent] = useState('');
@@ -26,34 +30,15 @@ const Dashboard = () => {
       </ul>
     </div>
     <div className="main-content">
-      {user === 'Add' && <UserManagement />}
-      {user === 'View' && <RoleManagement />}
-      {role === 'Add' && <RoleManagement />}
-      {role === 'View' && <RoleManagement />}
+      {user === 'Add' && <AddUser/>}
+      {user === 'View' && < UserView/>}
+      {role === 'Add' && <RoleAdd/>}
+      {role === 'View' && <RoleView/>}
     </div>
   </div>
 
    
   )
 }
-
-const UserManagement = () => {
-    return (
-      <div>
-        <h2>User Management</h2>
-        {/* Add your user management code here */}
-      </div>
-    );
-  };
-  
-  const RoleManagement = () => {
-    return (
-      <div>
-        <h2>Role Management</h2>
-        {/* Add your role management code here */}
-      </div>
-    );
-  };
-  
 
 export default Dashboard
