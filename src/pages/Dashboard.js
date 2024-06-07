@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import UserView from '../components/UserView';
-import RoleAdd from '../components/RoleAdd';
-import RoleView from '../components/RoleView';
 import AddUser from '../components/AddUser';
+import AddRole from '../components/AddRole';
+import ViewRole from '../components/ViewRole';
 
 const Dashboard = () => {
     const [activeComponent, setActiveComponent] = useState('');
@@ -32,8 +32,8 @@ const Dashboard = () => {
     <div className="main-content">
       {user === 'Add' && <AddUser/>}
       {user === 'View' && < UserView/>}
-      {role === 'Add' && <RoleAdd/>}
-      {role === 'View' && <RoleView/>}
+      {role === 'Add' && <AddRole/>}
+      {role === 'View' && <ViewRole/>}
     </div>
   </div>
 

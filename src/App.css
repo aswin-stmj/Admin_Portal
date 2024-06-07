@@ -180,3 +180,65 @@ input {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Addrole */
+.AddRolecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background color for contrast */
+  padding: 0 20px; /* Padding to ensure the box doesn't touch the screen edges */
+  box-sizing: border-box;
+}
+
+.AddRolebox {
+  background-color: #fff;
+  padding: 40px; /* Increased padding for a larger box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Ensure the box doesn't exceed the viewport width */
+  max-height: 90%; /* Ensure the box doesn't exceed the viewport height */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  overflow: auto; /* Enable scrolling within the box if content overflows */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* ViewRole */
+
+.ViewRoleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background color for contrast */
+  padding: 0 20px; /* Padding to ensure the box doesn't touch the screen edges */
+  box-sizing: border-box;
+}
+
+.ViewRoleBox {
+  background-color: #fff;
+  padding: 40px; /* Increased padding for a larger box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Ensure the box doesn't exceed the viewport width */
+  max-height: 90%; /* Ensure the box doesn't exceed the viewport height */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  overflow: auto; /* Enable scrolling within the box if content overflows */
+}
